@@ -1,7 +1,9 @@
 from flask import Flask
+from Discrakt.discrakt import connect_discord
 
 app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return "Hello World!"
+    connect_discord()
+    return "Siuuuu"

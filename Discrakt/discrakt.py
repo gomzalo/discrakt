@@ -48,10 +48,12 @@ def connect_discord():
         try:
             RPC.connect()
             logging.info("Discord Connection Successful")
+            print("Discord Connection Successful")
             break
         except Exception:
             logging.warning("Discord Connection Failure")
             time.sleep(15)
+            print("Discord Connection Failure")
 
 
 def signal_handler(sig, frame):
